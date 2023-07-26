@@ -5,12 +5,12 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+ console.log(`${import.meta.VITE_ANTMANS_VAR}`)
 
   return (
     <>
-     <div>
-      Ant man is learning code
-     </div>
+     <div>Ant man is learning code</div>
+     <div>Antmans secret code is {import.meta.env.VITE_ANTMANS_VAR}</div>
      
       {/* /* <div>
         <a href="https://vitejs.dev" target="_blank">
